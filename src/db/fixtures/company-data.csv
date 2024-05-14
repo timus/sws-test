@@ -1,0 +1,13 @@
+id,name,ticker_symbol,exchange_symbol,unique_symbol,date_generated,security_name,exchange_country_iso,listing_currency_iso,canonical_url,unique_symbol_slug,score_id
+46B285BC-B25F-4814-985C-390A4BFA2023,Afterpay,APT,ASX,ASX:APT,2020-05-24 11:01:59,Ordinary Shares,AU,AUD,/stocks/au/software/asx-apt/afterpay-shares,asx-apt,26507
+4BE2C01F-F390-479C-A166-8E0DD73CF7B9,BHP Group,BHP,ASX,ASX:BHP,2020-05-24 10:36:54,LTD Ordinary Shares,AU,AUD,/stocks/au/materials/asx-bhp/bhp-group-shares,asx-bhp,1895
+FC7B296B-300B-4710-8F84-D68A5BFBC75B,Telstra,TLS,ASX,ASX:TLS,2020-05-23 14:07:15,Ordinary Shares,AU,AUD,/stocks/au/telecom/asx-tls/telstra-shares,asx-tls,1
+743F0744-8987-4339-B565-DEE3A93E9934,Apple,AAPL,NasdaqGS,NasdaqGS:AAPL,2020-05-24 02:20:41,Common Stock,US,USD,/stocks/us/tech/nasdaq-aapl/apple,nasdaq-aapl,162
+D0665877-9EC5-4568-8A29-E8FFF77DF072,Amazon.com,AMZ,NasdaqGS,NasdaqGS:AMZ,2020-05-24 02:31:18,Common Stock,US,USD,/stocks/us/retail/nasdaq-amzn/amazoncom,nasdaq-amz,33
+8ACBC59A-0EC5-42D1-9F7B-6D31ABD4421E,Facebook,FB,NasdaqGS,NasdaqGS:FB,2020-05-24 04:51:37,Class A Common Stock,US,USD,/stocks/us/media/nasdaq-fb/facebook,nasdaq-fb,17129
+424EB65E-8C34-42BF-A107-61F93D4E9E6D,Microsoft,MSFT,NasdaqGS,NasdaqGS:MSFT,2020-05-24 03:39:14,Common Stock,US,USD,/stocks/us/software/nasdaq-msft/microsoft,nasdaq-msft,81
+65DCE5EA-70D6-417F-9CAC-1EAA92FB7F1C,Tesla,TSLA,NasdaqGS,NasdaqGS:TSLA,2020-05-23 08:32:49,Common Stock,US,USD,/stocks/us/automobiles/nasdaq-tsla/tesla,nasdaq-tsla,18906
+C8250615-877A-4AE1-BEF3-636B69CD83E8,Alibaba Group Holding,BABA,NYSE,NYSE:BABA,2020-05-24 06:23:25,ADS EACH REPR 1 ORD SHS (SPON) (CDI),US,USD,/stocks/us/retail/nyse-baba/alibaba-group-holding,nyse-baba,21152
+49A0E7C9-F918-4E97-AECA-D8D37F9A3F4F,Delta Air Lines,DAL,NYSE,NYSE:DAL,2020-05-23 03:14:10,Common Stock,US,USD,/stocks/us/transportation/nyse-dal/delta-air-lines,nyse-dal,2038
+A0A1A293-FDA8-48DF-9EBF-35556CDE3235,Walt Disney,DIS,NYSE,NYSE:DIS,2020-05-24 02:40:27,Common Shares,US,USD,/stocks/us/media/nyse-dis/walt-disney,nyse-dis,1629
+3B07801A-1C3A-46E6-A7FF-E1F59F31C466,Pfizer,PFE,NYSE,NYSE:PFE,2020-05-24 02:48:09,Common Stock,US,USD,/stocks/us/pharmaceuticals-biotech/nyse-pfe/pfizer,nyse-pfe,1471

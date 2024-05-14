@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: swsdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  sws-api:
+    build: .
+    environment:
+      - RUN_MODE=HTTP
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4000:3000"  
+
+  sws-worker:
+    build: .
+    environment:
+      - RUN_MODE=WORKER
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"  
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql_data:
+    driver: local
