@@ -27,12 +27,20 @@ export class VolatilitySchedulerService implements OnModuleInit {
     private async initSchedulesForCompanies(companyIds: string[]) {
         for (const companyId of companyIds) {
             try {
+                // Run the job immediately on start
+                await queue.add(
+                    `calculate-volatility-${companyId}-immediate`,
+                    { companyId }
+                );
+                this.logger.log(`Executed immediate volatility calculation for company ID: ${companyId}`);
+
+                // Schedule the job to run every 24 hours
                 await queue.add(
                     `calculate-volatility-${companyId}`,
                     { companyId },
-                    { repeat: { every: 6000 } }
+                    { repeat: { every: 24 * 60 * 60 * 1000 } } // 24 hours in milliseconds
                 );
-                this.logger.log(`Scheduled volatility calculation for company ID: ${companyId}`);
+                this.logger.log(`Scheduled volatility calculation for company ID: ${companyId} to run every 24 hours`);
             } catch (error) {
                 this.logger.error(`Failed to schedule volatility calculation for company ID: ${companyId}`, error.stack);
             }
